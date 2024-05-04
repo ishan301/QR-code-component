@@ -18,12 +18,15 @@
       margin:0;
       background-color:hsl(212, 45%, 89%);
       font-family: "Outfit", sans-serif;
+      height: 100vh;
+      width: 100vw;
     }
     .container{
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      width: 100vw;
     }
     .card{
       background-color: hsl(0, 0%, 100%);
@@ -31,7 +34,7 @@
       display: flex;
       flex-direction: column;
       gap:16px;
-      width: 288px;
+      max-width: 288px;
       border-radius: 20px;
       filter: drop-shadow(0.35 0.35rem 0.5rem rgba(0, 0, 0, 0.5));
       box-shadow: 1px 2px rgba(0, 0, 0, 0.2), -1px 2px rgba(0,0,0,0.2);
@@ -68,17 +71,11 @@
         transform: scale(0.8);
       }
     }
-    @media screen and (min-width: 376px) and (max-width: 768px) {
-      .card{
-        transform: scale(0.9);
-      }
-      
-    }
-    @media screen and (min-width: 1900px) {
+    /* @media screen and (min-width: 1900px) {
       .card{
         transform: scale(1.5);
       }
-    }
+    } */
   </style>
 </head>
 <body>
