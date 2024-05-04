@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      padding:0;
+      margin:0;
+      background-color:hsl(212, 45%, 89%);
+      font-family: "Outfit", sans-serif;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card{
+      background-color: hsl(0, 0%, 100%);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap:16px;
+      width: 288px;
+      border-radius: 20px;
+    }
+    .image-wrapper{
+      background: url('images/image-qr-code.png') no-repeat center center/cover;
+      width: 288px;
+      height: 288px;
+      border-radius: 10px;
+    }
+    .card-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .heading{
+      font-weight:700;
+      font-size: 20px;
+      text-align: center;
+    }
+    .details{
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      .card{
+        transform: scale(0.8);
+      }
+    }
+    @media screen and (min-width: 1440px) {
+      .card{
+        transform: scale(1.5);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="image-wrapper"></div>
+    <div class="card-content">
+      <p class="heading">Improve your front-end skills by building projects</p>
+      <p class="details">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
